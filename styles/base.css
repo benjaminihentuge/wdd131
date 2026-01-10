@@ -11,7 +11,7 @@ body {
     color: #333;
 }
 
-.course-title {
+#course-title {
     display: block;
     text-align: center;
     font-size: 2rem;
@@ -79,6 +79,7 @@ main {
     margin-bottom: 1.75rem;
     display: grid;
     min-height: 95vh;
+    max-width:fit-content;
     grid-template: 1fr auto auto / 1fr 1fr 1fr;
     gap: 1rem;
 }
