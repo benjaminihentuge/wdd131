@@ -147,11 +147,14 @@ header {
     background-color: white;
 }
 
-.pic-1 img, .pic-2 img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+.pic-1 img,
+.pic-2 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px; 
+    object-fit: cover;    
 }
+
 
 .card2 {
     grid-column: 3 / 4;
