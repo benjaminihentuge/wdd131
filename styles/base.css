@@ -149,8 +149,8 @@ header {
 
 .pic-1 img,
 .pic-2 img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 10px; 
     object-fit: cover;    
 }
