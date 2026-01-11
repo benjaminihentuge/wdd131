@@ -54,7 +54,9 @@ nav {
     align-items: center;
     padding: 0.75rem;
 }
-
+.navigation ul{
+    color: #000;
+}
 .navigation li {
     flex: 1 1 auto;
 }
