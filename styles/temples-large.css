@@ -1,0 +1,37 @@
+@media screen and (min-width: 899px) {
+  body {
+    background-color: whitesmoke;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .navigation {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    gap: 2rem;
+  }
+
+  .navigation a {
+    display: block;
+    font-size: 25px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+
+  #page-title {
+    grid-column: 1/4;
+  }
+}
