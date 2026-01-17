@@ -12,8 +12,8 @@ body {
 }
 
 header {
-  background-color: aquamarine;
   padding: 1rem;
+  background-color: aquamarine;
 }
 
 #menu {
@@ -22,6 +22,10 @@ header {
   right: 1rem;
   display: block;
   padding: 0.5rem;
+}
+
+#temple-span {
+  font-size: xx-large;
 }
 
 #menu::before {
@@ -38,7 +42,7 @@ header {
   justify-content: space-evenly;
   list-style: none;
   background-color: aquamarine;
-  color: #fff;
+  color: black;
 }
 
 .navigation a {
@@ -46,7 +50,7 @@ header {
   padding: 1rem;
   text-align: center;
   text-decoration: none;
-  color: #fff;
+  color: black;
 }
 .navigation a:hover {
   background-color: #bbb;
