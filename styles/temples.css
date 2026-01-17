@@ -36,6 +36,12 @@ header {
   content: "❎";
 }
 
+nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
 .navigation {
   display: flex;
   flex-direction: column;
