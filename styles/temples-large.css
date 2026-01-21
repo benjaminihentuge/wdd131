@@ -7,6 +7,7 @@
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
+    background-color: aquamarine;
   }
 
   #menu {
@@ -23,6 +24,12 @@
   .navigation a {
     display: block;
     font-size: 25px;
+  }
+
+  .navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
   }
 
   main {

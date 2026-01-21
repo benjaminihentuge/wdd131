@@ -1,0 +1,100 @@
+/* temples.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #0066cc;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#menu {
+    display: block; /* Display the button only on smaller screens */
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+}
+
+#menu::before {
+    content: "☰"; /* Hamburger icon */
+}
+
+#menu.open::before {
+    content: "❎"; /* Close icon */
+}
+
+nav {
+    background-color: #0066cc;
+    padding: 50px;
+}
+
+.navigation {
+    display: none; /* Initially hidden */
+    flex-direction: column; /* Stack links for small screens */
+}
+
+.navigation.open {
+    display: flex; /* Show when open */
+}
+nav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+nav li {
+    margin: 0 10px; 
+    font-size: 18px; 
+}
+
+nav a {
+    color: #fff; 
+    text-decoration: none;
+    display: block; 
+    padding: 15px; 
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 1rem; 
+    max-width: 1200px; 
+    margin: auto; 
+    padding: 1rem; 
+}
+
+figure {
+    background: #f9f9f9; 
+    padding: 1rem; 
+    border-radius: 8px; 
+    text-align: center; 
+}
+
+figure img {
+    width: 100%;
+    height: auto; 
+}
