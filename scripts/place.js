@@ -3,18 +3,14 @@ document.getElementById("currentYear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent =
   `Last modified: ${document.lastModified}`;
 
-// ================================
-// WEATHER DATA (Example or from API)
-// ================================
 const weather = {
   temperature: 5, // °C
   conditions: "Mostly Sunny",
   wind: 10, // km/h
 };
 
-// ================================
 // CALCULATE WIND CHILL FUNCTION
-// ================================
+
 function calculateWindChill(tempC, windKmh) {
   // Only calculate if viable
   if (tempC > 10 || windKmh <= 4.8) return "N/A";
@@ -28,9 +24,6 @@ function calculateWindChill(tempC, windKmh) {
   );
 }
 
-// ================================
-// POPULATE WEATHER UL
-// ================================
 function displayWeather(weatherData) {
   const weatherList = document.getElementById("weatherData");
 
@@ -62,7 +55,4 @@ function displayWeather(weatherData) {
   weatherList.appendChild(windChillLi);
 }
 
-// ================================
-// INITIAL DISPLAY
-// ================================
 displayWeather(weather);
