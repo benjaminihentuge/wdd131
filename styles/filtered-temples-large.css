@@ -1,49 +1,42 @@
-/* temples-large.css */
-@media (min-width: 725px) {
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
-    }
+@media screen and (min-width: 1253px) {
+  body {
+    background-color: whitesmoke;
+  }
 
-    nav {
-        background-color: #0066cc;
-        padding: 50px;
-    }
+  header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: aquamarine;
+  }
 
-    nav ul {
-        list-style-type: none; 
-        margin: 0;
-        padding: 0;
-        display: flex; 
-    }
+  #menu {
+    display: none;
+  }
 
-    .navigation {
-        display: flex; 
-        flex-direction: row; 
-        justify-content: center; 
-        background-color: #0066cc;
-        margin-top: 1px;
-    }
+  .navigation {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    gap: 2rem;
+  }
 
-    nav li {
-        margin: 0 10px; 
-        font-size: 18px; 
-    }
+  .navigation a {
+    display: block;
+    font-size: 25px;
+  }
 
-    nav a {
-        color: #fff; 
-        text-decoration: none;
-        display: block; 
-        padding: 15px; 
-    }
+  .navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+  }
 
-    nav a:hover {
-        background-color: rgba(255, 255, 255, 0.2); 
-        border-radius: 15px;
-        transition: background-color 0.3s;
-    }
-
-    /* Hide the menu button on larger screens */
-    #menu {
-        display: none; 
-    }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
 }
