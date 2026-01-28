@@ -12,8 +12,9 @@ body {
 }
 
 header {
-  padding: 1rem;
-  background-color: aquamarine;
+  padding: 0.5rem;
+  background-color: rgb(11, 101, 71);
+  height: fit-content;
 }
 
 #menu {
@@ -57,6 +58,7 @@ nav {
   text-align: center;
   text-decoration: none;
   color: black;
+  background-color: rgb(11, 101, 71);
 }
 .navigation a:hover {
   background-color: #bbb;
@@ -139,4 +141,9 @@ figure {
   border: solid #c9bcbc;
   margin: 1.5rem;
   background-color: #e9e2e2;
+}
+
+h3 {
+  font-size: x-large;
+  margin-bottom: 0.5rem;
 }
