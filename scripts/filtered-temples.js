@@ -129,6 +129,7 @@ function displayTemples(templeArray) {
 }
 
 document.querySelector(".navigation").addEventListener("click", (event) => {
+  const ne = document.querySelector("#page-title");
   const target = event.target;
 
   if (target.tagName === "A") {
@@ -138,26 +139,27 @@ document.querySelector(".navigation").addEventListener("click", (event) => {
     switch (filterType) {
       case "Old":
         displayTemples(
-          temples.filter(
-            (temple) => new Date(temple.dedicated).getFullYear() < 1900,
-          ),
+          temples.filter((temple) => parseInt(temple.dedicated) < 1900),
         );
+        ne.textContent = "Old Temples";
         break;
       case "New":
         displayTemples(
-          temples.filter(
-            (temple) => new Date(temple.dedicated).getFullYear() > 2000,
-          ),
+          temples.filter((temple) => parseInt(temple.dedicated) > 2000),
         );
+        ne.textContent = "New Temples";
         break;
       case "Large":
         displayTemples(temples.filter((temple) => temple.area > 90000));
+        ne.textContent = "Large Temples";
         break;
       case "Small":
         displayTemples(temples.filter((temple) => temple.area < 10000));
+        ne.textContent = "Small Temples";
         break;
       case "Home":
         displayTemples(temples);
+        ne.textContent = "Home";
         break;
       default:
         break;
