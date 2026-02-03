@@ -1,0 +1,228 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap");
+
+:root {
+  /* Color Palette */
+  --primary-color: #333333; /* Charcoal - main text */
+  --secondary-color: #57604f; /* Olive - secondary elements */
+  --accent1-color: #d4af37; /* Gold - luxury accent */
+  --accent2-color: #f5f5dc; /* Cream - backgrounds */
+
+  /* Fonts */
+  --heading-font: "Playfair Display", serif;
+  --paragraph-font: "Lato", Helvetica, sans-serif;
+
+  /* Text Colors */
+  --headline-color-on-white: #333333;
+  --headline-color-on-color: #333333;
+  --paragraph-color-on-white: #333333;
+  --paragraph-color-on-color: #333333;
+
+  /* Backgrounds */
+  --paragraph-background-color: #f5f5dc;
+
+  /* Navigation */
+  --nav-link-color: #333333;
+  --nav-background-color: #f5f5dc;
+  --nav-hover-link-color: #f5f5dc;
+  --nav-hover-background-color: #57604f;
+}
+
+/* Body */
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+  font-family: var(--paragraph-font);
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+}
+
+/* Images */
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h2 {
+  text-align: center;
+}
+
+/* Divider */
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+  border: none;
+}
+
+/* Header */
+header {
+  padding: 1.5em;
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
+}
+header > h1,
+header > h2 {
+  color: var(--accent2-color);
+}
+/* Color table (for reference if needed) */
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.colors tr {
+  border: solid var(--primary-color);
+}
+.colors {
+  background-color: #999;
+}
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+.primary {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2 {
+  background-color: var(--accent2-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+/* Paragraphs */
+p {
+  padding: 1em;
+  line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  font-size: 1.1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.5em 1.2em;
+  color: var(--nav-link-color);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+  border-radius: 4px;
+}
+
+/* Colored Paragraph Section */
+p.colored {
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
+}
+
+/* Sitemap */
+.sitemap {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em 3em;
+  grid-template-areas:
+    ". . home home . ."
+    ". . . top . ."
+    ". . . down . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3"
+    ". . page4 page4 . .";
+
+  margin-top: 3em;
+}
+
+.sitemap > div {
+  text-align: center;
+  font-family: var(--paragraph-font);
+}
+
+/* Sitemap Blocks */
+.sm-home {
+  grid-area: home;
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
+  line-height: 3em;
+}
+
+.sm-page2 {
+  grid-area: page2;
+  background-color: var(--accent1-color);
+  color: var(--primary-color);
+  line-height: 3em;
+}
+
+.sm-page3 {
+  grid-area: page3;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  line-height: 3em;
+}
+.sm-page4 {
+  grid-area: page4;
+  background-color: var(--secondary-color); /* olive */
+  color: var(--accent2-color); /* cream */
+  line-height: 3em;
+}
+
+/* Sitemap Lines */
+.top {
+  grid-area: top;
+  border-left: 1px solid var(--primary-color);
+}
+.left {
+  grid-area: left;
+  border-top: 1px solid var(--primary-color);
+  border-left: 1px solid var(--primary-color);
+}
+.right {
+  grid-area: right;
+  border-top: 1px solid var(--primary-color);
+  border-right: 1px solid var(--primary-color);
+}
+
+.down {
+  grid-area: down;
+  border-left: 1px solid var(--primary-color);
+}
+
+li {
+  text-align: left;
+  padding: 0.5rem;
+}
