@@ -4,6 +4,7 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+
 header {
   display: flex;
   width: auto;
@@ -17,23 +18,22 @@ body {
   line-height: 2;
   color: #0e0b0b;
 }
+
 h1 {
   width: 100%;
+  background-color: #7faf9c;
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px 8px 0 0;
 }
+
 main {
   width: 100%;
   max-width: 700px;
   margin: 0.5rem auto;
   padding-bottom: 1rem;
   border-radius: 8px;
-}
-
-h1 {
-  background-color: beige;
-  text-align: center;
-  padding: 1.5rem;
-  margin-bottom: 1rem;
-  border-radius: 8px 8px 0 0;
 }
 
 .pr fieldset {
@@ -46,7 +46,7 @@ h1 {
 .pr label {
   display: block;
   padding-top: 1rem;
-  color: #9c2c13;
+  color: #0e0b0b;
   font-size: 0.9rem;
 }
 
@@ -89,7 +89,6 @@ textarea {
   font-size: 0.9rem;
 }
 
-/* Star Rating */
 .star-rating {
   display: flex;
   flex-direction: row-reverse;
@@ -121,13 +120,69 @@ textarea {
   color: #ff69b4;
 }
 
-/* Footer */
+.highlight-part {
+  color: red;
+}
+
 footer {
   max-width: 700px;
   margin: 0 auto;
   background-color: #7faf9c;
   padding: 0.8rem;
   text-align: center;
-  color: white;
+  color: #0e0b0b;
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  header,
+  main,
+  footer {
+    max-width: 100%;
+    margin: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+    padding: 1rem;
+  }
+
+  .pr fieldset {
+    margin: 1rem 0.5rem;
+    padding: 0.8rem;
+  }
+
+  .pr input[type="text"],
+  .pr input[type="date"],
+  .pr select,
+  .pr textarea,
+  .pr input[type="submit"] {
+    max-width: 100%;
+  }
+
+  body {
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 768px) {
+  header,
+  main,
+  footer {
+    max-width: 95%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .pr fieldset {
+    margin: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    max-width: 700px;
+  }
 }
