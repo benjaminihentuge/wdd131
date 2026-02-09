@@ -23,9 +23,8 @@
   </head>
 
   <body>
+    <header><h1>Product Review</h1></header>
     <main>
-      <h1>Product Review</h1>
-
       <form method="get" class="pr" action="review.html">
         <fieldset>
           <label for="product">Product Name</label>
@@ -38,16 +37,16 @@
             <input type="radio" name="stars" id="star5" value="5" required />
             <label for="star5"></label>
 
-            <input type="radio" name="stars" id="star4" value="4" />
+            <input type="radio" name="stars" id="star4" value="4" required />
             <label for="star4"></label>
 
-            <input type="radio" name="stars" id="star3" value="3" />
+            <input type="radio" name="stars" id="star3" value="3" required />
             <label for="star3"></label>
 
-            <input type="radio" name="stars" id="star2" value="2" />
+            <input type="radio" name="stars" id="star2" value="2" required />
             <label for="star2"></label>
 
-            <input type="radio" name="stars" id="star1" value="1" />
+            <input type="radio" name="stars" id="star1" value="1" required />
             <label for="star1"></label>
           </div>
 
@@ -55,7 +54,9 @@
           <input type="date" id="date" name="installationDate" required />
 
           <div class="input-checkbox">
-            <p>Which features did you find useful? (check all that apply)</p>
+            <label
+              >Which features did you find useful? (check all that apply)</label
+            >
 
             <label>
               <input type="checkbox" name="durability" value="yes" />

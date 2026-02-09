@@ -4,11 +4,20 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
-
-main {
+header {
+  display: flex;
+  width: auto;
   max-width: 700px;
-  margin: 2rem auto;
-
+  justify-content: center;
+  margin: 0.5rem auto;
+}
+h1 {
+  width: 100%;
+}
+main {
+  width: 100%;
+  max-width: 700px;
+  margin: 0.5rem auto;
   padding-bottom: 1rem;
   border-radius: 8px;
 }
@@ -114,5 +123,5 @@ footer {
   padding: 0.8rem;
   text-align: center;
   color: white;
-  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
