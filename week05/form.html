@@ -54,34 +54,32 @@
           <input type="date" id="date" name="installationDate" required />
 
           <div class="input-checkbox">
-            <p>Which features did you find useful? (Check all that apply)</p>
+            <p>Which features did you find useful? (check all that apply)</p>
 
-            <input
-              type="checkbox"
-              id="durability"
-              name="durability"
-              value="yes"
-            />
-            <label for="durability">Durability</label>
+            <label for="durability">
+              <input
+                type="checkbox"
+                id="durability"
+                name="durability"
+                value="yes"
+              />
+              Durability
+            </label>
 
-            <input
-              type="checkbox"
-              id="easeOfUse"
-              name="easeOfUse"
-              value="yes"
-            />
-            <label for="easeOfUse">Ease of Use</label>
+            <label for="easeOfUse">
+              <input type="checkbox" id="easeOfUse" value="yes" />
+              Ease of Use
+            </label>
 
-            <input
-              type="checkbox"
-              id="performance"
-              name="performance"
-              value="yes"
-            />
-            <label for="performance">Performance</label>
+            <label for="performance">
+              <input type="checkbox" id="performance" value="yes" />
+              Performance
+            </label>
 
-            <input type="checkbox" id="design" name="design" value="yes" />
-            <label for="design">Design</label>
+            <label for="design">
+              <input type="checkbox" id="design" value="yes" />
+              Design
+            </label>
           </div>
 
           <label for="review">Written Review (optional)</label>
