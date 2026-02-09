@@ -11,6 +11,12 @@ header {
   justify-content: center;
   margin: 0.5rem auto;
 }
+
+body {
+  font-family: "Lato", Arial, sans-serif;
+  line-height: 2;
+  color: #0e0b0b;
+}
 h1 {
   width: 100%;
 }
