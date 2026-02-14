@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap");
-
 :root {
   --charcoal: #333333;
   --olive: #78866b;
@@ -26,16 +24,18 @@ body {
 
 .container {
   max-width: 600px;
-  padding: 3rem 2rem;
-  border: 2px solid var(--olive);
+  padding: 3rem 2.5rem;
   background-color: #ffffff;
+  border: 2px solid var(--olive);
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
 h1 {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
 }
 
 .tagline {
@@ -45,8 +45,8 @@ h1 {
 }
 
 .coming-text {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  line-height: 1.7;
   margin-bottom: 2.5rem;
 }
 
@@ -54,12 +54,13 @@ h1 {
   background-color: var(--olive);
   color: var(--cream);
   border: none;
-  padding: 0.75rem 2rem;
-  font-size: 1rem;
+  padding: 0.8rem 2.2rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 .notify-btn:hover {
@@ -70,4 +71,5 @@ footer {
   margin-top: 3rem;
   font-size: 0.85rem;
   color: var(--charcoal);
+  opacity: 0.8;
 }
