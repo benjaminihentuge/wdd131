@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap");
+
+:root {
+  --charcoal: #333333;
+  --olive: #78866b;
+  --cream: #f5f5dc;
+  --gold: #d4af37;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Lato", Arial, sans-serif;
+  background-color: var(--cream);
+  color: var(--charcoal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  padding: 3rem 2rem;
+  border: 2px solid var(--olive);
+  background-color: #ffffff;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-style: italic;
+  color: var(--olive);
+  margin-bottom: 2rem;
+}
+
+.coming-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.notify-btn {
+  background-color: var(--olive);
+  color: var(--cream);
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.notify-btn:hover {
+  background-color: var(--charcoal);
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: var(--charcoal);
+}
