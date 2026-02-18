@@ -20,9 +20,8 @@
 
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/main-larger.css" />
-
     <title>WDD 131 - Dynamic Web Fundamentals - Osondu Benjamin Ihentuge</title>
-    <script src="scripts/catalogue.js" defer></script>
+    <script src="scripts/home.js" defer></script>
   </head>
   <body>
     <header>
@@ -37,9 +36,9 @@
       <div class="nav-container">
         <nav>
           <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Catalogue</a></li>
-            <li><a href="about-us.html">About US</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="about-us.html">About Us</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
@@ -47,14 +46,30 @@
     </header>
 
     <main>
-      <h1 id="catalogue">CATALOGUE</h1>
-      <div class="filter-buttons">
-        <button data-filter="All" class="active">All</button>
-        <button data-filter="Men">Men</button>
-        <button data-filter="Women">Women</button>
-        <button data-filter="Fabric">Fabric</button>
+      <div class="hero">
+        <picture>
+          <source srcset="images/hero-large.webp" media="(min-width: 1000px)" />
+          <source srcset="images/hero-medium.webp" media="(min-width: 500px)" />
+          <source
+            srcset="images/home-hero-small.webp"
+            media="(max-width: 499px)"
+          />
+          <img
+            src="images/hero-large.webp"
+            alt="hero"
+            width="1500"
+            height="750"
+          />
+        </picture>
+        <div class="overlay">
+          <h1 id="hero-header">NGLANE</h1>
+        </div>
       </div>
+      <h1 id="categories">Categories</h1>
       <div class="grid-container"></div>
+      <div class="main-content">
+        <button class="cta-button">VIEW CATALOGUE</button>
+      </div>
     </main>
     <footer>
       <div class="footer-container">
