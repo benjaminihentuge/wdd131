@@ -1,15 +1,14 @@
-/* Google Fonts */
-
 :root {
   /* Color Palette */
-  --primary-color: #333333; /* Charcoal - main text */
-  --secondary-color: #57604f; /* Olive - secondary elements */
-  --accent1-color: #d4af37; /* Gold - luxury accent */
-  --accent2-color: #f5f5dc; /* Cream - backgrounds */
+  --primary-color: #333333;
+  --secondary-color: #57604f;
+  --accent1-color: #d4af37;
+  --accent2-color: #f5f5dc;
 
   /* Fonts */
-  --heading-font: "Playfair Display", serif;
-  --paragraph-font: "Lato", Helvetica, sans-serif;
+  --logo-font: "Supreme", serif;
+  --heading-font: "Supreme", serif;
+  --paragraph-font: "Satoshi", sans-serif;
 
   /* Text Colors */
   --headline-color-on-white: #333333;
@@ -27,7 +26,6 @@
   --nav-hover-background-color: #57604f;
 }
 
-/* Body */
 body {
   max-width: 960px;
   margin: 0 auto;
@@ -37,6 +35,7 @@ body {
   font-family: var(--paragraph-font);
   background-color: var(--accent2-color);
   color: var(--primary-color);
+  line-height: 1.7;
 }
 
 /* Images */
@@ -45,7 +44,6 @@ img {
   margin: 0 auto;
 }
 
-/* Headings */
 h1,
 h2,
 h3,
@@ -53,10 +51,24 @@ h4,
 h5,
 h6 {
   font-family: var(--heading-font);
+  font-weight: 400;
+  letter-spacing: 0.05em;
   color: var(--headline-color-on-white);
 }
+
+h1 {
+  letter-spacing: 0.12em;
+}
+
 h2 {
   text-align: center;
+}
+
+.logo {
+  font-family: var(--logo-font);
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 
 /* Divider */
@@ -74,45 +86,45 @@ header {
   background-color: var(--secondary-color);
   color: var(--accent2-color);
 }
+
 header > h1,
 header > h2 {
   color: var(--accent2-color);
 }
-/* Color table (for reference if needed) */
+
+/* Color table */
 .colors {
   width: 100%;
   min-width: 350px;
   margin: 30px auto;
   text-align: center;
+  background-color: #999;
 }
 
 .colors tr {
   border: solid var(--primary-color);
 }
-.colors {
-  background-color: #999;
-}
+
 .colors td {
   width: 25%;
   height: 3em;
 }
+
 .primary {
   background-color: var(--primary-color);
   color: var(--accent2-color);
 }
+
 .secondary {
   background-color: var(--secondary-color);
 }
+
 .accent1 {
   background-color: var(--accent1-color);
 }
+
 .accent2 {
   background-color: var(--accent2-color);
-}
-
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
 }
 
 /* Paragraphs */
@@ -121,14 +133,19 @@ p {
   line-height: 1.6;
 }
 
-/* Navigation */
+p.colored {
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
+}
+
 nav {
   background-color: var(--nav-background-color);
   line-height: 3em;
-  font-size: 1.1em;
+  font-size: 1.05em;
   display: flex;
   justify-content: center;
-  gap: 1em;
+  gap: 1.2em;
+  font-family: var(--paragraph-font);
 }
 
 nav a {
@@ -136,18 +153,13 @@ nav a {
   padding: 0.5em 1.2em;
   color: var(--nav-link-color);
   font-weight: 500;
+  letter-spacing: 0.05em;
 }
 
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
   border-radius: 4px;
-}
-
-/* Colored Paragraph Section */
-p.colored {
-  background-color: var(--secondary-color);
-  color: var(--accent2-color);
 }
 
 /* Sitemap */
@@ -163,7 +175,6 @@ p.colored {
     ". left left right right ."
     "page2 page2 . . page3 page3"
     ". . page4 page4 . .";
-
   margin-top: 3em;
 }
 
@@ -193,10 +204,11 @@ p.colored {
   color: var(--accent2-color);
   line-height: 3em;
 }
+
 .sm-page4 {
   grid-area: page4;
-  background-color: var(--secondary-color); /* olive */
-  color: var(--accent2-color); /* cream */
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
   line-height: 3em;
 }
 
@@ -205,11 +217,13 @@ p.colored {
   grid-area: top;
   border-left: 1px solid var(--primary-color);
 }
+
 .left {
   grid-area: left;
   border-top: 1px solid var(--primary-color);
   border-left: 1px solid var(--primary-color);
 }
+
 .right {
   grid-area: right;
   border-top: 1px solid var(--primary-color);
